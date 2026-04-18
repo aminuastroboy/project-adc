@@ -21,11 +21,10 @@
 Connected to:
 https://formspree.io/f/mojydknk
 
+## WhatsApp button
+Update the placeholder number in `app/page.jsx`:
+2340000000000
+
 ## Run locally
-```bash
 npm install
 npm run dev
-```
-
-## Deploy
-Push to GitHub and import into Vercel.
