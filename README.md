@@ -1,17 +1,24 @@
-# ADC National Campaign Website
+# Ahmad Rufai Abdulhamid Movement Website
 
-## Before running
-Add these images into `public/` with these exact names:
+## Required images in `public/`
+- adc-logo.png
+- sponsor.jpg
+- sponsor1.jpg
+- sponsor2.jpg
+- sponsor3.jpg
+- sponsor4.jpg
+- sponsor5.jpg
+- sponsor6.jpg
+- sponsor7.jpg
 - atiku1.jpg
 - atiku2.jpg
 - atiku3.jpg
 - atiku4.jpg
 - atiku5.jpg
 - atiku6.jpg
-- sponsor.jpg
 
-## Form
-Volunteer form is connected to:
+## Volunteer form
+Connected to:
 https://formspree.io/f/mojydknk
 
 ## Run locally
@@ -20,9 +27,5 @@ npm install
 npm run dev
 ```
 
-## Deploy to Vercel
-1. Extract ZIP
-2. Add your images to `public/`
-3. Push to GitHub
-4. Import repo into Vercel
-5. Deploy
+## Deploy
+Push to GitHub and import into Vercel.

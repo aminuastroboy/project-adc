@@ -50,16 +50,19 @@ export default function ADCNationalCampaignWebsite() {
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div>
-            <div className="text-2xl font-black tracking-tight text-green-700">ADC National Platform</div>
-            <div className="text-sm text-slate-600">A New Direction for Nigeria</div>
+          <div className="flex items-center gap-3">
+            <img src="/adc-logo.png" alt="ADC Logo" className="h-10 w-10 object-contain" />
+            <div>
+              <div className="text-2xl font-black tracking-tight text-green-700">Ahmad Rufai Abdulhamid Movement</div>
+              <div className="text-sm text-slate-600">Yola South House of Assembly • ADC</div>
+            </div>
           </div>
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
-            <a href="#pillars">Pillars</a>
-            <a href="#technology">Technology</a>
-            <a href="#adamawa">Adamawa</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#impact">Impact</a>
+            <a href="#president">National Link</a>
             <a href="#volunteer">Volunteer</a>
             <a href="#news">News</a>
           </nav>
@@ -68,27 +71,27 @@ export default function ADCNationalCampaignWebsite() {
 
       <main>
         <section id="hero" className="bg-gradient-to-br from-green-900 via-green-800 to-slate-900 text-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-2 md:py-24">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
             <div className="flex flex-col justify-center">
               <div className="inline-flex w-fit rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm">
-                ADC Presidential Platform
+                ADC • Yola South House of Assembly Movement
               </div>
               <h1 className="mt-6 text-4xl font-black leading-tight md:text-6xl">
-                Alhaji Atiku Abubakar
+                Ahmad Rufai Abdulhamid
               </h1>
-              <p className="mt-4 text-xl text-green-100">Wazirin Adamawa</p>
+              <p className="mt-4 text-xl text-green-100">Aspirant, Member Representing Yola South – Adamawa State House of Assembly</p>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
-                A national campaign platform built on accountability, opportunity, progress, and practical leadership for a stronger Nigeria.
+                A people-driven movement focused on youth empowerment, child and maternal healthcare, and stronger community engagement across Yola South.
               </p>
-              <div className="mt-4 text-2xl font-semibold">Accountability • Opportunity • Progress</div>
+              <div className="mt-4 text-2xl font-semibold">Grassroots Leadership • Real Community Impact</div>
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#pillars" className="rounded-2xl bg-white px-6 py-3 font-semibold text-green-800">Explore Manifesto</a>
+                <a href="#agenda" className="rounded-2xl bg-white px-6 py-3 font-semibold text-green-800">View Agenda</a>
                 <a href="#volunteer" className="rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold">Join Movement</a>
               </div>
             </div>
             <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl">
-              <div className="flex h-full min-h-[420px] items-center justify-center rounded-[1.5rem] bg-white/5 text-center text-white/70">
-                <img src="/atiku1.jpg" alt="Atiku" className="h-full w-full rounded-[1.5rem] object-cover" />
+              <div className="flex h-full min-h-[420px] items-center justify-center rounded-[1.5rem] bg-white/5 text-center text-white/70 overflow-hidden">
+                <img src="/sponsor.jpg" alt="Ahmad Rufai Abdulhamid" className="h-full w-full rounded-[1.5rem] object-cover" />
               </div>
             </div>
           </div>
@@ -96,30 +99,28 @@ export default function ADCNationalCampaignWebsite() {
 
         <section id="about" className="mx-auto max-w-7xl px-6 py-16">
           <div className="max-w-4xl">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">About the Platform</div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Strong foundations. Smart innovation.</h2>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">About the Movement</div>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">A local movement built around visible service</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              The ADC National General Platform is built around the everyday priorities Nigerians understand clearly: governance and accountability, economy and job creation, security, agriculture, infrastructure, education, and healthcare. Technology supports these priorities quietly and effectively without overshadowing the values of service, trust, and visible development.
+              The Ahmad Rufai Abdulhamid Movement is centered on practical leadership in Yola South. It reflects a grassroots style of service where the candidate is seen in communities, engages directly with people, and responds to local needs with empathy, action, and accountability.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              While strongly aligned with the wider ADC national vision, this platform is first and foremost about Ahmad Rufai Abdulhamid’s commitment to the people of Yola South. The national presidential message remains visible as a supportive connection, but the heart of the website is his own leadership, agenda, and community impact.
             </p>
           </div>
         </section>
 
-        <section id="pillars" className="bg-slate-50 py-16">
+        <section id="agenda" className="bg-slate-50 py-16">
           <div className="mx-auto max-w-7xl px-6">
             <div className="max-w-3xl">
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Core Manifesto Pillars</div>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">The main national priorities</h2>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Campaign Agenda</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Three people-centered priorities for Yola South</h2>
             </div>
-            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
               {[
-                ["Governance & Accountability", "Transparent leadership, anti-corruption enforcement, and public accountability at all levels."],
-                ["Economy & Job Creation", "Support for SMEs, industrial growth, investment expansion, and youth employment."],
-                ["Security", "Stronger national systems, community safety, and better intelligence coordination."],
-                ["Agriculture", "Farmer support, food production, rural development, and stronger market access."],
-                ["Infrastructure", "Roads, electricity, water supply, housing, and rural connectivity."],
-                ["Education", "Better schools, stronger teachers, wider access, and technical training."],
-                ["Healthcare", "Accessible healthcare, stronger hospitals, and affordable treatment."],
-                ["National Unity", "Inclusive development, fairness, and policies that serve all Nigerians."],
+                ["Youth Empowerment", "Supporting young people through skills, entrepreneurship, opportunity creation, and practical empowerment initiatives that build long-term independence."],
+                ["Child & Maternal Healthcare", "Promoting better healthcare access, stronger support for mothers and children, and more responsive health-focused community interventions."],
+                ["Community Engagement", "Building direct connections with citizens, listening to real concerns, and ensuring the people remain part of leadership and decision-making."],
               ].map(([title, text]) => (
                 <div key={title} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
                   <h3 className="text-xl font-bold tracking-tight">{title}</h3>
@@ -130,22 +131,21 @@ export default function ADCNationalCampaignWebsite() {
           </div>
         </section>
 
-        <section id="technology" className="mx-auto max-w-7xl px-6 py-16">
+        <section id="impact" className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid gap-10 md:grid-cols-2">
             <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Technology as Support</div>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Technology for better governance and growth</h2>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Movement Impact</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Visible presence in the community</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Technology is positioned as a support layer that improves transparency, creates jobs, strengthens security, helps farmers, and expands access to services. It is not the main front-facing message of the platform, but a practical tool for delivering results.
+                This movement is not abstract. It is rooted in presence, compassion, and people-first engagement. The images and activities shown across the platform reflect a campaign identity shaped by direct outreach, giving, listening, and showing up where it matters most.
               </p>
             </div>
             <div className="grid gap-4">
               {[
-                "Digital governance and transparent public systems",
-                "Tech-enabled job opportunities for youth",
-                "Smart security support and intelligence tools",
-                "AgriTech for farmers and rural development",
-                "Digital education and better telecom access",
+                "Grassroots outreach and direct citizen interaction",
+                "Support for vulnerable people and struggling households",
+                "A visible youth-focused and community-driven presence",
+                "Practical engagement beyond speeches and slogans",
               ].map((item) => (
                 <div key={item} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">{item}</div>
               ))}
@@ -153,24 +153,18 @@ export default function ADCNationalCampaignWebsite() {
           </div>
         </section>
 
-        <section id="adamawa" className="bg-slate-950 py-16 text-white">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="max-w-3xl">
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-300">Adamawa State Focus</div>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">National vision, state-level impact</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                In Adamawa State, the platform prioritizes agriculture, youth empowerment, infrastructure, education, healthcare, and practical development supported by strategic technology where useful.
-              </p>
+        <section id="president" className="bg-slate-950 py-16 text-white">
+          <div className="mx-auto max-w-7xl px-6 grid gap-10 md:grid-cols-[0.7fr_1.3fr] items-center">
+            <div className="rounded-[2rem] overflow-hidden border border-white/10 bg-white/5">
+              <img src="/atiku1.jpg" alt="Atiku Abubakar" className="h-[320px] w-full object-cover" />
             </div>
-            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {[
-                "Agriculture and rural development",
-                "Youth empowerment and job creation",
-                "Infrastructure and basic services",
-                "Education and healthcare improvement",
-              ].map((item) => (
-                <div key={item} className="rounded-[2rem] border border-white/10 bg-white/5 p-6">{item}</div>
-              ))}
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-300">National Alignment</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Supporting the presidential vision of ADC</h2>
+              <p className="mt-6 text-lg leading-8 text-slate-300">
+                Ahmad Rufai Abdulhamid’s movement stands with the wider ADC platform and supports the presidential direction of Alhaji Atiku Abubakar, Wazirin Adamawa. This national connection strengthens the message of accountability, opportunity, and progress while keeping the main focus on Yola South.
+              </p>
+              <div className="mt-4 text-lg font-semibold text-white">Local leadership with national alignment.</div>
             </div>
           </div>
         </section>
@@ -179,9 +173,9 @@ export default function ADCNationalCampaignWebsite() {
           <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
             <div>
               <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Volunteer</div>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Join the national movement</h2>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Join the movement</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Build support from national to ward level through community engagement, manifesto awareness, media support, youth mobilization, and grassroots outreach.
+                Build support from community to ward level through direct outreach, agenda awareness, media support, youth mobilization, and grassroots organization.
               </p>
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm">
@@ -194,10 +188,9 @@ export default function ADCNationalCampaignWebsite() {
                 <input name="lga" placeholder="LGA / Ward" className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3" />
                 <select name="role" required className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3">
                   <option value="">Select volunteer role</option>
-                  <option>National Volunteer</option>
-                  <option>State Mobilizer</option>
-                  <option>LGA Coordinator</option>
-                  <option>Ward Volunteer</option>
+                  <option>Movement Volunteer</option>
+                  <option>Ward Mobilizer</option>
+                  <option>Community Coordinator</option>
                   <option>Media Support</option>
                   <option>Youth Outreach</option>
                 </select>
@@ -211,14 +204,48 @@ export default function ADCNationalCampaignWebsite() {
         <section id="sponsor" className="bg-green-50 py-16">
           <div className="mx-auto max-w-7xl px-6 grid gap-10 md:grid-cols-2 items-center">
             <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Sponsor</div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Candidate Profile</div>
               <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Ahmad Rufai Abdulhamid</h2>
+              <p className="mt-2 text-green-700 font-semibold">Aspirant, Member Yola South – Adamawa State House of Assembly</p>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                A committed supporter of the ADC vision, Ahmad Rufai Abdulhamid stands firmly behind this movement, contributing to grassroots mobilization, community engagement, and campaign growth across key regions.
+                A committed grassroots leader focused on practical development and community impact across Yola South.
               </p>
+
+              <div className="mt-6 space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 inline-block h-2 w-2 rounded-full bg-green-700" />
+                  <p><strong>Youth Empowerment:</strong> Skills development, entrepreneurship support, and job creation initiatives for young people.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 inline-block h-2 w-2 rounded-full bg-green-700" />
+                  <p><strong>Child & Maternal Healthcare:</strong> Improving access to quality healthcare for mothers and children across communities.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 inline-block h-2 w-2 rounded-full bg-green-700" />
+                  <p><strong>Community Engagement:</strong> Strengthening direct interaction with citizens and ensuring their voices shape policy and development.</p>
+                </div>
+              </div>
             </div>
+
             <div className="rounded-[2rem] overflow-hidden shadow-lg">
               <img src="/sponsor.jpg" alt="Ahmad Rufai Abdulhamid" className="w-full h-[420px] object-cover" />
+            </div>
+          </div>
+
+          <div className="mx-auto max-w-7xl px-6 mt-12">
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Community Impact</div>
+            <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {[
+                "/sponsor1.jpg",
+                "/sponsor2.jpg",
+                "/sponsor3.jpg",
+                "/sponsor4.jpg",
+                "/sponsor5.jpg",
+                "/sponsor6.jpg",
+                "/sponsor7.jpg",
+              ].map((src, i) => (
+                <img key={i} src={src} className="h-[260px] w-full rounded-2xl object-cover" alt={`Sponsor ${i+1}`} />
+              ))}
             </div>
           </div>
         </section>
@@ -226,7 +253,7 @@ export default function ADCNationalCampaignWebsite() {
         <section id="news" className="bg-slate-50 py-16">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">News / Updates</div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Latest from the campaign</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Latest from the movement</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {newsItems.map((item) => (
                 <div key={item.title} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
@@ -241,8 +268,8 @@ export default function ADCNationalCampaignWebsite() {
 
         <section id="gallery" className="bg-white py-16">
           <div className="mx-auto max-w-7xl px-6">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Gallery</div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Campaign Moments</h2>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">National Gallery</div>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Presidential campaign moments</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {[
                 "/atiku1.jpg",
@@ -252,7 +279,7 @@ export default function ADCNationalCampaignWebsite() {
                 "/atiku5.jpg",
                 "/atiku6.jpg",
               ].map((src, i) => (
-                <img key={i} src={src} className="h-[320px] w-full rounded-2xl object-cover" alt={`Campaign ${i + 1}`} />
+                <img key={i} src={src} className="h-[320px] w-full rounded-2xl object-cover" alt={`National ${i+1}`} />
               ))}
             </div>
           </div>
