@@ -10,6 +10,14 @@
 - sponsor5.jpg
 - sponsor6.jpg
 - sponsor7.jpg
+- impact1.jpg
+- impact2.jpg
+- impact3.jpg
+- impact4.jpg
+- impact5.jpg
+- impact6.jpg
+- impact7.jpg
+- impact8.jpg
 - atiku1.jpg
 - atiku2.jpg
 - atiku3.jpg

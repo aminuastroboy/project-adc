@@ -1,4 +1,3 @@
-
 "use client";
 
 export default function AhmadRufaiMovementWebsite() {
@@ -35,6 +34,17 @@ export default function AhmadRufaiMovementWebsite() {
     ["/sponsor7.jpg", "A movement rooted in action, connection, and community trust."],
   ];
 
+  const communityGallery = [
+    ["/impact1.jpg", "Direct connection with elders and respected voices in the community."],
+    ["/impact2.jpg", "Grassroots meeting and listening engagement with residents."],
+    ["/impact3.jpg", "Walking the community and staying present among the people."],
+    ["/impact4.jpg", "Strengthening local networks through visible political organization."],
+    ["/impact5.jpg", "Community dialogue built on respect, presence, and service."],
+    ["/impact6.jpg", "Inclusive grassroots interaction with women, youth, and families."],
+    ["/impact7.jpg", "Building stronger local relationships and trust across Yola South."],
+    ["/impact8.jpg", "People-first leadership rooted in accessibility and community presence."],
+  ];
+
   const formspreeEndpoint = "https://formspree.io/f/mojydknk";
   const whatsappNumber = "2340000000000";
 
@@ -68,11 +78,13 @@ export default function AhmadRufaiMovementWebsite() {
               <div className="text-sm text-slate-600">Yola South House of Assembly • ADC</div>
             </div>
           </div>
+
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#agenda">Agenda</a>
             <a href="#impact">Impact</a>
+            <a href="#community-impact">Community</a>
             <a href="#why-vote">Why Vote Ahmad</a>
             <a href="#president">National Link</a>
             <a href="#volunteer">Volunteer</a>
@@ -100,8 +112,9 @@ export default function AhmadRufaiMovementWebsite() {
                 <a href={`https://wa.me/${whatsappNumber}?text=I%20want%20to%20join%20Ahmad%20Rufai%20Abdulhamid%20Movement`} className="rounded-2xl bg-green-600 px-6 py-3 font-semibold text-white">Join on WhatsApp</a>
               </div>
             </div>
+
             <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl">
-              <div className="flex h-full min-h-[420px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-white/5 text-center text-white/70">
+              <div className="flex h-full min-h-[420px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-white/5">
                 <img src="/sponsor.jpg" alt="Ahmad Rufai Abdulhamid" className="h-full w-full rounded-[1.5rem] object-cover" />
               </div>
             </div>
@@ -159,6 +172,25 @@ export default function AhmadRufaiMovementWebsite() {
                 "Practical engagement beyond speeches and slogans",
               ].map((item) => (
                 <div key={item} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">{item}</div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="community-impact" className="bg-white py-16">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Community Impact</div>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Real engagement with the people</h2>
+            <p className="mt-4 max-w-2xl text-lg text-slate-600">
+              From sitting with elders to engaging youth and supporting communities, this movement is built on direct connection, trust, and action.
+            </p>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {communityGallery.map(([src, caption], i) => (
+                <div key={i} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                  <img src={src} alt={`Community impact ${i + 1}`} className="h-[280px] w-full object-cover" />
+                  <div className="p-4 text-sm leading-6 text-slate-600">{caption}</div>
+                </div>
               ))}
             </div>
           </div>
@@ -234,13 +266,15 @@ export default function AhmadRufaiMovementWebsite() {
           </div>
         </section>
 
-        <section id="sponsor" className="bg-green-50 py-16">
+        <section id="candidate-profile" className="bg-green-50 py-16">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 items-center">
             <div>
               <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Candidate Profile</div>
               <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Ahmad Rufai Abdulhamid</h2>
               <p className="mt-2 font-semibold text-green-700">Aspirant, Member Yola South – Adamawa State House of Assembly</p>
-              <p className="mt-6 text-lg leading-8 text-slate-600">A committed grassroots leader focused on practical development and community impact across Yola South.</p>
+              <p className="mt-6 text-lg leading-8 text-slate-600">
+                A committed grassroots leader focused on practical development and community impact across Yola South.
+              </p>
               <div className="mt-6 space-y-3">
                 <div className="flex items-start gap-3"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-green-700" /><p><strong>Youth Empowerment:</strong> Skills development, entrepreneurship support, and job creation initiatives for young people.</p></div>
                 <div className="flex items-start gap-3"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-green-700" /><p><strong>Child & Maternal Healthcare:</strong> Improving access to quality healthcare for mothers and children across communities.</p></div>
@@ -253,7 +287,7 @@ export default function AhmadRufaiMovementWebsite() {
           </div>
 
           <div className="mx-auto mt-12 max-w-7xl px-6">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Community Impact</div>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Candidate Gallery</div>
             <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {sponsorGallery.map(([src, caption], i) => (
                 <div key={i} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
