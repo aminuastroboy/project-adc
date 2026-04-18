@@ -1,27 +1,14 @@
 "use client";
 
 export default function AhmadRufaiMovementWebsite() {
+  const whatsappGroupLink = "https://chat.whatsapp.com/FencTUJFuhnCISEtNoE6sZ";
+  const formspreeEndpoint = "https://formspree.io/f/mojydknk";
+
   const newsItems = [
-    {
-      title: "ADC National Platform Gains Momentum Across States",
-      date: "Latest Update",
-      text: "The campaign continues to grow its message of accountability, opportunity, and progress with stronger outreach, volunteer mobilization, and public engagement across multiple states.",
-    },
-    {
-      title: "Volunteer Registration Opens for Nationwide Mobilization",
-      date: "Campaign News",
-      text: "Supporters can now join the movement through the national volunteer form, helping strengthen ward, LGA, state, and national coordination.",
-    },
-    {
-      title: "Adamawa Focus Highlights Agriculture and Youth Empowerment",
-      date: "State Update",
-      text: "In Adamawa, the campaign is emphasizing agriculture, infrastructure, youth opportunities, education, healthcare, and practical development priorities.",
-    },
-    {
-      title: "Technology Positioned as a Support Tool for Growth",
-      date: "Policy Brief",
-      text: "The platform maintains its traditional core pillars while applying technology as a practical support system for governance, jobs, security, agriculture, and education.",
-    },
+    { title: "Movement gains stronger grassroots momentum", date: "Latest Update", text: "The movement continues to expand across Yola South through direct engagement, volunteer mobilization, and stronger community visibility." },
+    { title: "Volunteer drive strengthens local structures", date: "Campaign News", text: "Supporters are joining ward-level and community-level coordination to build a more connected and responsive movement." },
+    { title: "Community engagement remains the heart of the movement", date: "Field Update", text: "Meetings, outreach visits, and direct contact with residents continue to shape the tone of a people-first campaign." },
+    { title: "EmpowerHer training expands the movement’s impact", date: "Community Program", text: "The upcoming digital skills training for women entrepreneurs reflects a practical empowerment agenda beyond politics." },
   ];
 
   const sponsorGallery = [
@@ -45,20 +32,15 @@ export default function AhmadRufaiMovementWebsite() {
     ["/impact8.jpg", "People-first leadership rooted in accessibility and community presence."],
   ];
 
-  const formspreeEndpoint = "https://formspree.io/f/mojydknk";
-  const whatsappNumber = "2340000000000";
-
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
-
     try {
       const response = await fetch(formspreeEndpoint, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
       });
-
       if (!response.ok) throw new Error("Submit failed");
       alert("Volunteer form submitted successfully.");
       e.target.reset();
@@ -69,34 +51,32 @@ export default function AhmadRufaiMovementWebsite() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <img src="/adc-logo.png" alt="ADC Logo" className="h-10 w-10 object-contain" />
+            <img src="/adc-logo.png" alt="ADC Logo" className="h-11 w-11 object-contain" />
             <div>
               <div className="text-2xl font-black tracking-tight text-green-700">Ahmad Rufai Abdulhamid Movement</div>
               <div className="text-sm text-slate-600">Yola South House of Assembly • ADC</div>
             </div>
           </div>
-
           <nav className="hidden gap-6 text-sm md:flex">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#agenda">Agenda</a>
-            <a href="#impact">Impact</a>
-            <a href="#community-impact">Community</a>
-            <a href="#why-vote">Why Vote Ahmad</a>
-            <a href="#president">National Link</a>
-            <a href="#volunteer">Volunteer</a>
-            <a href="#news">News</a>
+            <a href="#hero" className="hover:text-green-700">Home</a>
+            <a href="#about" className="hover:text-green-700">About</a>
+            <a href="#agenda" className="hover:text-green-700">Agenda</a>
+            <a href="#community-impact" className="hover:text-green-700">Community</a>
+            <a href="#event" className="hover:text-green-700">EmpowerHer</a>
+            <a href="#why-vote" className="hover:text-green-700">Why Vote Ahmad</a>
+            <a href="#news" className="hover:text-green-700">News</a>
           </nav>
         </div>
       </header>
 
       <main>
-        <section id="hero" className="bg-gradient-to-br from-green-900 via-green-800 to-slate-900 text-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
-            <div className="flex flex-col justify-center">
+        <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-green-950 via-green-800 to-slate-900 text-white">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_28%)]" />
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-[1.15fr_0.85fr] md:py-24">
+            <div className="relative z-10 flex flex-col justify-center">
               <div className="inline-flex w-fit rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm">
                 ADC • Yola South House of Assembly Movement
               </div>
@@ -105,16 +85,28 @@ export default function AhmadRufaiMovementWebsite() {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
                 A people-driven movement focused on youth empowerment, child and maternal healthcare, and stronger community engagement across Yola South.
               </p>
-              <div className="mt-4 text-2xl font-semibold">Grassroots Leadership • Real Community Impact</div>
+              <div className="mt-4 text-2xl font-semibold text-white">Grassroots Leadership • Real Community Impact</div>
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#agenda" className="rounded-2xl bg-white px-6 py-3 font-semibold text-green-800">View Agenda</a>
-                <a href="#volunteer" className="rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold">Join Movement</a>
-                <a href={`https://wa.me/${whatsappNumber}?text=I%20want%20to%20join%20Ahmad%20Rufai%20Abdulhamid%20Movement`} className="rounded-2xl bg-green-600 px-6 py-3 font-semibold text-white">Join on WhatsApp</a>
+                <a href="#agenda" className="rounded-2xl bg-white px-6 py-3 font-semibold text-green-800 shadow-lg">View Agenda</a>
+                <a href="#volunteer" className="rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white">Join Movement</a>
+                <a href={whatsappGroupLink} target="_blank" rel="noreferrer" className="rounded-2xl bg-green-600 px-6 py-3 font-semibold text-white shadow-lg hover:bg-green-700">Join WhatsApp Group</a>
+              </div>
+              <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 md:grid-cols-4">
+                {[
+                  ["Focus", "Yola South"],
+                  ["Agenda", "3 Priorities"],
+                  ["Style", "Grassroots"],
+                  ["Movement", "People First"],
+                ].map(([label, value]) => (
+                  <div key={label} className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center">
+                    <div className="text-xl font-bold">{value}</div>
+                    <div className="mt-1 text-sm text-white/80">{label}</div>
+                  </div>
+                ))}
               </div>
             </div>
-
-            <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl">
-              <div className="flex h-full min-h-[420px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-white/5">
+            <div className="relative z-10 rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl">
+              <div className="flex h-full min-h-[440px] items-center justify-center overflow-hidden rounded-[1.5rem] bg-white/5">
                 <img src="/sponsor.jpg" alt="Ahmad Rufai Abdulhamid" className="h-full w-full rounded-[1.5rem] object-cover" />
               </div>
             </div>
@@ -122,15 +114,26 @@ export default function AhmadRufaiMovementWebsite() {
         </section>
 
         <section id="about" className="mx-auto max-w-7xl px-6 py-16">
-          <div className="max-w-4xl">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">About the Movement</div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">A local movement built around visible service</h2>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              The Ahmad Rufai Abdulhamid Movement is centered on practical leadership in Yola South. It reflects a grassroots style of service where the candidate is seen in communities, engages directly with people, and responds to local needs with empathy, action, and accountability.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              While strongly aligned with the wider ADC national vision, this platform is first and foremost about Ahmad Rufai Abdulhamid’s commitment to the people of Yola South. The national presidential message remains visible as a supportive connection, but the heart of the website is his own leadership, agenda, and community impact.
-            </p>
+          <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">About the Movement</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">A local movement built around visible service</h2>
+              <p className="mt-6 text-lg leading-8 text-slate-600">
+                The Ahmad Rufai Abdulhamid Movement is centered on practical leadership in Yola South. It reflects a grassroots style of service where the candidate is seen in communities, engages directly with people, and responds to local needs with empathy, action, and accountability.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">
+                While strongly aligned with the wider ADC national vision, this platform is first and foremost about Ahmad Rufai Abdulhamid’s commitment to the people of Yola South. The national presidential message remains visible as a supportive connection, but the heart of the website is his own leadership, agenda, and community impact.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Movement Snapshot</div>
+              <div className="mt-6 space-y-4 text-slate-700">
+                <div><div className="text-sm text-slate-500">Candidate</div><div className="font-semibold">Ahmad Rufai Abdulhamid</div></div>
+                <div><div className="text-sm text-slate-500">Position</div><div className="font-semibold">Yola South House of Assembly Aspirant</div></div>
+                <div><div className="text-sm text-slate-500">Platform</div><div className="font-semibold">ADC</div></div>
+                <div><div className="text-sm text-slate-500">Approach</div><div className="font-semibold">Community First • Practical Impact</div></div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -184,7 +187,6 @@ export default function AhmadRufaiMovementWebsite() {
             <p className="mt-4 max-w-2xl text-lg text-slate-600">
               From sitting with elders to engaging youth and supporting communities, this movement is built on direct connection, trust, and action.
             </p>
-
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {communityGallery.map(([src, caption], i) => (
                 <div key={i} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -192,6 +194,41 @@ export default function AhmadRufaiMovementWebsite() {
                   <div className="p-4 text-sm leading-6 text-slate-600">{caption}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="event" className="bg-gradient-to-r from-emerald-50 to-orange-50 py-16">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] items-center">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Upcoming Community Event</div>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">EmpowerHer: Digital Skills Training for Women Entrepreneurs</h2>
+              <p className="mt-6 text-lg leading-8 text-slate-600">
+                A special community-focused training designed to equip women entrepreneurs with practical digital skills to grow visibility, attract customers, and improve sales using their phones and social platforms.
+              </p>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <div className="text-sm font-semibold text-green-700">Focus Areas</div>
+                  <div className="mt-2 text-slate-600">WhatsApp Business, Facebook Pages, product promotion, and customer engagement.</div>
+                </div>
+                <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <div className="text-sm font-semibold text-green-700">Target Audience</div>
+                  <div className="mt-2 text-slate-600">Local women-led small and medium businesses seeking growth through digital marketing.</div>
+                </div>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href={whatsappGroupLink} target="_blank" rel="noreferrer" className="rounded-2xl bg-green-700 px-6 py-3 font-semibold text-white">Join Event Group</a>
+                <a href="#volunteer" className="rounded-2xl border border-green-700 px-6 py-3 font-semibold text-green-700">Support the Program</a>
+              </div>
+            </div>
+            <div className="rounded-[2rem] border border-white/60 bg-white p-8 shadow-xl">
+              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">Program Snapshot</div>
+              <div className="mt-4 space-y-4 text-slate-700">
+                <div><strong>Title:</strong> EmpowerHer: Digital Skills Training for Women Entrepreneurs</div>
+                <div><strong>Format:</strong> One-day practical training session</div>
+                <div><strong>Training Window:</strong> 10:00 AM – 2:00 PM</div>
+                <div><strong>Powered by:</strong> Hon. Ahmad Rufai Abdulhamid & Astrovia Enterprise</div>
+              </div>
             </div>
           </div>
         </section>
@@ -285,7 +322,6 @@ export default function AhmadRufaiMovementWebsite() {
               <img src="/sponsor.jpg" alt="Ahmad Rufai Abdulhamid" className="w-full h-[420px] object-cover" />
             </div>
           </div>
-
           <div className="mx-auto mt-12 max-w-7xl px-6">
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-green-700">Candidate Gallery</div>
             <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -327,9 +363,47 @@ export default function AhmadRufaiMovementWebsite() {
           </div>
         </section>
 
-        <a href="#volunteer" className="fixed bottom-6 right-6 z-30 rounded-full bg-green-700 px-6 py-4 font-semibold text-white shadow-2xl hover:bg-green-800">
-          Join Movement
+        <a href={whatsappGroupLink} target="_blank" rel="noreferrer" className="fixed bottom-6 right-6 z-30 rounded-full bg-green-700 px-6 py-4 font-semibold text-white shadow-2xl hover:bg-green-800">
+          Join WhatsApp Group
         </a>
+
+        <footer className="bg-slate-950 text-white">
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3">
+            <div>
+              <div className="flex items-center gap-3">
+                <img src="/adc-logo.png" alt="ADC Logo" className="h-10 w-10 object-contain" />
+                <div>
+                  <div className="text-xl font-bold">Ahmad Rufai Abdulhamid Movement</div>
+                  <div className="text-sm text-slate-400">Yola South House of Assembly • ADC</div>
+                </div>
+              </div>
+              <p className="mt-4 leading-7 text-slate-400">
+                A people-driven movement focused on youth empowerment, child and maternal healthcare, and stronger community engagement across Yola South.
+              </p>
+            </div>
+            <div>
+              <div className="text-lg font-semibold">Quick Links</div>
+              <div className="mt-4 space-y-2 text-slate-400">
+                <div><a href="#agenda">Agenda</a></div>
+                <div><a href="#community-impact">Community Impact</a></div>
+                <div><a href="#event">EmpowerHer Event</a></div>
+                <div><a href="#news">News & Updates</a></div>
+              </div>
+            </div>
+            <div>
+              <div className="text-lg font-semibold">Connect</div>
+              <p className="mt-4 leading-7 text-slate-400">
+                Join the official WhatsApp group for movement updates, event information, and community engagement.
+              </p>
+              <a href={whatsappGroupLink} target="_blank" rel="noreferrer" className="mt-4 inline-block rounded-2xl bg-green-700 px-5 py-3 font-semibold text-white">
+                Join WhatsApp Group
+              </a>
+            </div>
+          </div>
+          <div className="border-t border-white/10 px-6 py-4 text-center text-sm text-slate-500">
+            © 2026 Ahmad Rufai Abdulhamid Movement. Powered by Astrovia Enterprise.
+          </div>
+        </footer>
       </main>
     </div>
   );
