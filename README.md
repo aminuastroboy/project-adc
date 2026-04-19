@@ -1,4 +1,4 @@
-# Ahmad Rufai Abdulhamid Premium Campaign Website
+# Ahmad Rufai Abdulhamid Final Final Premium Website
 
 ## Required images in public/
 adc-logo.png
@@ -18,6 +18,8 @@ impact5.jpg
 impact6.jpg
 impact7.jpg
 impact8.jpg
+royal1.jpg
+royal2.jpg
 atiku1.jpg
 atiku2.jpg
 atiku3.jpg
